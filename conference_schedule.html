@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0px;
+        font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    nav {
+      font-weight: bolder;
+    }
+    nav a {
+      color: #030E63 !important;
+    }
+    .marketing>h2 {
+        margin: 10px 0px 100px 0px;
+    }
+    .carousel {
+        transition: transform 1s ease;
+    }
+    .titlebar{
+      background-image: url("./Group\ 3.png");
+    }
+    .titlebar h1 {
+      color: #F9D100;
+      font-weight: 800;
+      font-family: Nunito;
+      font-size: 36px;
+      padding: 5px;
+    }
+    @media (max-width: 768px) {
+      .titlebar h1 {
+        font-size: 24px;
+      }
+    }
+    @media (max-width: 576px) {
+      .titlebar h1 {
+        font-size: 18px;
+      }
+    }
+    .sponsorships ul {
+        list-style-type: none;
+    }
+    @media (min-width: 1200px) and (max-width: 1400px) {
+      nav {
+        font-size: small !important;
+      }
+    }
+    @media (min-width: 992px) and (max-width: 1200px) {
+      nav {
+        font-size: 10px !important;
+      }
+    }
+    @media (max-width: 768px) {
+      .VDAT24 p{
+        font-size: 12px !important;
+      }
+    }
+    table {
+        border-spacing: 1;
+        border-collapse: collapse;
+        background: white;
+        border-radius: 6px;
+        overflow: hidden;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+      }
+      table * {
+        position: relative;
+      }
+      table td, table th {
+        padding-left: 8px;
+      }
+      table thead tr {
+        height: 60px;
+        font-size: 16px;
+      }
+      table tbody tr {
+        height: 48px;
+        border-bottom: 1px solid #111;
+      }
+      table tbody tr:last-child {
+        border: 0;
+      }
+      table td, table th {
+        text-align: center;
+      }
+      table td.l, table th.l {
+        text-align: center;
+      }
+      table td.c, table th.c {
+        text-align: center;
+      }
+      table td.r, table th.r {
+        text-align: center;
+      }
+      .nested-table td {
+        width: 10vw;
+      }
+      div.slide-right {
+        width:100%;
+        overflow:hidden;
+      }
+      div.slide-right h1,h2,h3,p {
+        animation: 1s slide-right;
+      }
+      
+      @keyframes slide-right {
+        from {
+          margin-left: -100%;
+          width: 300%; 
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+      ul {
+        text-align: justify;
+      }
+      @media (min-width: 576px) {
+        .sponsorships .mobile {
+          display: none;
+        }
+        .sponsorships h3 {
+          font-size: 32px;
+          font-weight: 800;
+        }
+      }
+      @media (max-width: 0px) {
+        .sponsorships .desktop {
+          display: none;
+        }
+        .sponsorships h1 {
+          font-size: 24px;
+        }
+        .sponsorships h3 {
+          font-size: medium;
+          font-weight: 600;
+        }
+        .sponsorships {
+          font-size: small;
+        }
+      }
+  .footer {
+    color: white !important;
+    text-align: justify;
+  }
+        
+    </style>
+</head>
+<body>
+    <!--Nav Bar-->
+    
+    <section class="sponsorships">
+        <div class="container px-4 pb-5" id="icon-grid">
+            <div class="col-lg-12 slide-right">
+                <h1 class="my-5">CONFERENCE SCHEDULE</h1>
+                <h3 class="border-bottom mb-3" style="color: #00ADB5;">CONFERENCE DAY 1<span style="color: #111; font-weight:500"> - 02 Sep 2024 (Monday)</span></h3>
+            </div>
+            <!--Desktop View-->
+            <table class="mt-5 desktop">
+                <thead>
+                  <tr style="background-color: #222831; color: #EEEEEE">
+                    <th style="width: 200px;">TIME</th>
+                    <th>EVENT DETAILS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>8.00 AM to 9.30 AM</td>
+                    <td><b>Registration</b></td>
+                  </tr>
+                  <tr>
+                    <td>9.30 AM to 11.00 AM</td>
+                    <td><b>Inauguration</b> <br /> <span style="font-size: smaller;">Venue: Anna Auditorium</span></td>
+                  </tr>
+                  <tr style="background-color: #E8EFCF;">
+                    <td >11.00 AM to 11.30 AM</td>
+                    <td>High Tea <br/> <span style="font-size: smaller;">Venue: CS Hall</span></td>
+                  </tr>
+                  <tr>
+                    <td >11.30 AM to 12.15 PM</td>
+                    <td>Keynote-1 (Mr.Navin Bishnoi, Country Head - Marvell) <br /> <span style="font-size: smaller;">Venue: Anna Auditorium</span></td>
+                  </tr>
+                  <tr>
+                    <td >12.15 PM to 1.00 PM</td>
+                    <td>Keynote-2 (Siemens) <br /> <span style="font-size: smaller;">Venue: Anna Auditorium</span></td>
+                  </tr>
+                  <tr style="background-color: #E8EFCF;">
+                    <td >1.00 PM to 2.00 PM</td>
+                    <td>Networking Lunch <br /> <span style="font-size: smaller;">Venue: Foodys</span></td>
+                  </tr>
+                  <tr>
+                    <td >2.00 PM to 2.30 PM</td>
+                    <td>Keynote-3 (Ms. Shamitha Rao - Sr. Manager, Solutions Group, Synopsys) <br /> <span style="font-size: smaller;">Venue: Anna Auditorium</span></td>
+                  </tr>
+                  <tr>
+                    <td >2.30 PM to 3.00 PM</td>
+                    <td>Keynote—4 (Mr. Alok Kuchlous, CEO, Mirafra Technology) <br /> <span style="font-size: smaller;">Venue: Anna Auditorium</span></td>
+                  </tr>
+                  <tr>
+                    <td >3.00 PM to 4.00 PM</td>
+                    <td>Poster Presentation, PhD Research Forum</td>
+                  </tr>
+                  <tr style="background-color: #E8EFCF;">
+                    <td >3.00 PM to 4 PM</td>
+                    <td>Networking Break <br /> <span style="font-size: smaller;">Venue: CS Hall</span></td>
+                  </tr>
+                  <tr>
+                    <td >4.00 PM to 5:30 PM</td>
+                    <td><b>Technical Session 1</b></td>
+                  </tr>
+                  <tr>
+                    <td ></td>
+                    <td>
+                      <table class="nested-table">
+                        <tr>
+                          <td><b><u>Session 1a</u></b></td>
+                          <td><b><u>Session 1b</u></b></td>
+                          <td><b><u>Session 1c</u></b></td>
+                          <td><b><u>Session 1d</u></b></td>
+                          <td><b><u>Session 1e</u></b></td>
+                        </tr>
+                        <tr>
+                          <td><b>Emerging Devices and Material Technologies</b><br /> <span style="font-size: smaller;">Venue: TT 312</span></td>
+                          <td><b>Testing and Verification</b><br /> <span style="font-size: smaller;">Venue: TT 727</span></td>
+                          <td><b>Analog/Mixed Circuit Design</b><br /> <span style="font-size: smaller;">Venue: Ambedkar Auditorium</span></td>
+                          <td><b>CAD for VLSI</b><br /> <span style="font-size: smaller;">Venue: Kamaraj Auditorium</span></td>
+                          <td><b>Emerging Processors for System Design</b><br /> <span style="font-size: smaller;">Venue: TT Gallery 2</span></td>
+                        </tr>
+                        <tr>
+                          <td>Session Chair: TBD</td>
+                          <td>Session Chair: TBD</td>
+                          <td>Session Chair: TBD</td>
+                          <td>Session Chair: TBD</td>
+                          <td>Session Chair: TBD</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">A Deep Insight into Frequency and Voltage Variation Impact on Memristor Performance and Applications of Memristor-NMOS Hybrid Structure in the Digital Domain
+                            <br /><br />Gummuluri Pavan Kumar (IIT BHU); <b>Manas Ranjan Dr Tripathy (SRM University AP)</b>; Jogendra Singh Rana (IIT BHU); Harshit Srivastava (IIT BHU); Sai Subrahmanya Baranala Tejesh (SRM University AP); </td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">MATLAB-Simulink based Framework for Combinational ATPG Applied to Testing of Digital Blocks in Analog and Mixed-signal Circuits
+                            <br /><br /> Puja Kumari (IIT(ISM) Dhanbad); <b>Rahul Bhattacharya (IIT(ISM) Dhanbad)</b></td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">A PAM-4 Based Full Duplex IO with In-built Feed-Forward Equalizer and Performance Enhanced Receiver
+                            <br /><br /><b>Ganpat Anant Parulekar (IIT Bombay)</b></td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Integrated Optimization Leakage Power, Timing, Area in a SOC Design
+                            <br /><br /><b>Ganta Avinash (NIT, Kurukshetra)</b>; Gaurav Saini (NIT Kurukshetra)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">An Improved Circuit Transformation Technique for Nearest Neighbor Implementation of Quantum Circuits
+                            <br /><br />Anirban Bhattacharjee (IIEST Shibpur); <b>Sourodeep Kundu (KIIT)</b>; Subham Kumar (IIT, Kharagpur); Laxmidhar Biswal (Mizoram University Aizawl); Chandan Bandyopadhyay (IIEST Shibpur); Hafizur Rahman (IPC, ICIEV)</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Acetone Sensing Performance of Pristine and Gold Doped Graphene Sheet: A Comparative Analysis
+                            <br /><br /><b>Dr. Indranil Maity (Institute of Engineering & Management (IEM), Kolkata)</b>; Soubarno Chatterjee (IEM, Kolkata); Souvik Bhanja (IEM, Kolkata)
+                           </td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Generic Methodolgy and Solution for Additive Jitter Correction in Mesh based Clock Architectures
+                            <br /><br />Sri Sakthi Santhanam (INTEL); Ankita Dhole (INTEL); <b>Sudheer Anumala (INTEL)</b>
+                           </td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">A Design Approach for CML-based 2/3 Dual Modulus Frequency Divider
+                            <br /><br /><b>Lokenath Kundu (NIT Silchar)</b>; Dr. Subhanil Maity (Cyient Ltd); Sourav Nath (NIT Silchar); Dr. Gaurav Singh Baghel (NIT Silchar); Krishna Lal Baishnab (NIT Silchar)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">An Adaptive Multi-Objective Optimization on CMOS Two Stage Op-Amp Circuit Synthesis
+                            <br /><br /><b>Sridhar P (VIT, Vellore)</b>; Harish Kittur (VIT Vellore); Arghya Korantak (VIT, Vellore); Akshat Kumar (VIT, Vellore)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">SNN with Gradient-based Backpropagation algorithm for ECG arrhythmia classification with LIF neuron and AdEx neuron
+                            <br /><br />Bana Shanmuga Sai Badrinatha Reddy (IITDM, Kancheepuram); <b>Priya K (IITDM, Kancheepuram)</b></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Implementation of an Efficient Charge Pump using Gate All Around Nanowire TFET for Energy Harvesting Applications
+                            <br /><br /><b>Arun A V (Muthoot Institute of Technology and Science)</b></td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Test Time Reduction with Data Throttling Techniques in a Multi Core SOC Design
+                            <br /><br /><b>Jatin Chakravarti (eInfochips - An Arrow Company)</b>; Chintan Panchal (eInfochips - An Arrow Company)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Design and implementation of High-performance CMOS-cross LCVCO for Low Phase Noise coupled
+                            <br /><br /><b>Sivaraaj N R (VIT, Vellore)</b>; Abdul Majeed K K (VIT, Vellore)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Leveraging ReRAM Sequence Graphs for Efficient Mapping of Binary Adders in ReRAM Crossbars
+                            <br /><br />Pragnya Dhal (Kalinga Institute of Industrial Technology (KIIT) University); <b>Arighna Deb (KIIT University)</b>; Subrata Das (University of Calcutta); Debesh K. Das (Jadavpur University)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">A Novel and Efficient SPI enabled RSA Crypto Accelerator for Real-Time applications
+                            <br /><br /><b>Venkata Reddy Kolagatla (C-DAC Bangalore)</b>; Aneesh R (C-DAC Bangalore); Vivian Desalphine (C-DAC Bangalore)</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Impact of Compliance Current on the Switching Behavior in SiOx based Resistive Switching Devices
+                            <br /><br /><b>Raju Vemuri (VIT Vellore)</b>; Saurabh SN Nagar (VIT Vellore)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Optimized Test Pattern Generation for Digital Circuits Using SAT-Based ATPG and Scan Insertion Method
+                            <br /><br /><b>Sandra Sugathan (College of Engineering (CoE) Trivandrum)</b>; Adersh V R (CoE Trivandrum)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Low-offset Voltage Error and Low Noise Based CMOS Push-pull Operational Amplifier for Biomedical Applications in 180nm CMOS Technology
+                            <br /><br /><b>Prabhat Kumar Barik (IIT Bhubaneswar)</b>; Barathram Ramkumar (IIT Bhubaneswar)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Runtime Prediction for VLSI Physical Design Processes using Machine Learning
+                            <br /><br /><b>Rutvikkumar Popatbhai Patel (Institute of Technology, Nirma University)</b>; Ruchi I. Gajjar (Institute of Technology, Nirma University)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Design and Implementation of 5-Stage Pipelined RISC-V Processor on FPGA
+                            <br /><br /><b>Pankaj Nair V M (CoE Trivandrum )</b>; Lalu  V (CoE Trivandrum)</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Optimization of CMOS compatible non-perovskite ferroelectric gate stack for designing low power Ferroelectric tunnel FETs
+                            <br /><br /><b>Venkata Appa Rao Yempada (IIIT Hyderabad)</b>; Srivatsava Jandhyala (IIIT Hyderabad); Janamani Chandram Ayyangalam (GITAM School of Technology, Visakhapatnam)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">A Shift-left Approach in Qualification of Digital IPs for SoCs by Applying Advanced Automation and Data Analytics
+                            <br /><br />Hirak Jyoti Chakraborty (Infineon Technologies); <b>Deep K Acharya (Infineon Technologies)</b></td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">High-Performance Stacked Dynamic Comparator for Analog to Digital Converters
+                            <br /><br /><b>Aryan Kannaujiya (IIT Jammu)</b>; Vipul Sahu (IIT Jammu); Ambika Prasad Shah (IIT Jammu)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Automated Design and Configuration of RISC-V based NoC-MPSoC Framework on FPGA
+                            <br /><br /><b>Mekala Bindu Bhargavi (BITS-Pilani Hyderabad Campus)</b>; Sai Siddharth Rokkam (BITS-Pilani Hyderabad Campus); Sri Parameswaran (University of Sydney); Soumya Joshi (BITS-Pilani, Hyderabad Campus)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Security Assessment of Rotation Countermeasure for Protection Against Fault Attacks
+                            <br /><br /><b>Maitri Iyer (AcSIR, CSIR-CEERI Pilani)</b>; Rishav Bhowmick (BITS Pilani, Hyderabad); Harsh Singh (BITS Pilani); Jai Gopal Pandey (CSIR-Central Electronics Engineering Research Institute, Pilani)</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr style="background-color: #1679AB; color: white;">
+                    <td >5:45 PM to 6:15 PM</td>
+                    <td>Career Forum
+                      <br /><span style="font-size: smaller;">Exploring Career Opportunities in the Semiconductor Industry by leading Experts from Govt. organizations/Industry/Academia<br />Venue: Anna Auditorium</span></td>
+                  </tr>
+                  <tr>
+                    <td >6:15 PM to 7:15 PM</td>
+                    <td>Cultural Program <br /> <span style="font-size: smaller;">Venue: Anna Auditorium</span></td>
+                  </tr>
+                  <tr style="background-color: #E8EFCF;">
+                    <td >7:15 PM Onwards</td>
+                    <td>Networking Dinner <br /> <span style="font-size: smaller;">Venue:  Foodys</span></td>
+                  </tr>
+                </tbody>
+            </table>
+            <!--Mobile View-->
+            <!--<table class="my-5 mobile">
+              <tbody>
+                <tr>
+                  <td style="background-color: #222831; color: #EEEEEE; text-align:center">Students (UG/PG/Ph.D.)</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Rs. 5000 (IEEE Members)</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Rs. 6000 (Non-IEEE Members)</td>
+                </tr>
+                <tr>
+                  <td style="background-color: #222831; color: #EEEEEE; text-align:center">Faculty/Scientists/Post-doc</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Rs. 6000 (IEEE Members)</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Rs. 7000 (Non-IEEE Members)</td>
+                </tr>
+                <tr>
+                  <td style="background-color: #222831; color: #EEEEEE; text-align:center">Industry Delegates</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Rs. 6000 (IEEE Members)</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Rs. 9000 (Non-IEEE Members)</td>
+                </tr>
+                <tr>
+                  <td style="background-color: #222831; color: #EEEEEE; text-align:center">Participants</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Rs. 3000 (IEEE Members)</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Rs. 3000 (Non-IEEE Members)</td>
+                </tr>
+                <tr>
+                  <td style="background-color: #222831; color: #EEEEEE; text-align:center">Students (UG/PG/Ph.D.)</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">$200 (IEEE Members)</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">$200 (Non-IEEE Members)</td>
+                </tr>
+              </tbody>
+            </table>-->
+            <div class="col-lg-12 slide-right mt-5">
+              <h3 class="border-bottom mb-3" style="color: #00ADB5;">CONFERENCE DAY 2<span style="color: #111; font-weight:500"> - 03 Sep 2024 (Tuesday)</span></h3>
+            </div>
+            <!--Desktop View-->
+            <table class="mt-5 desktop">
+              <thead>
+                <tr style="background-color: #222831; color: #EEEEEE">
+                  <th style="width: 200px;">TIME</th>
+                  <th>EVENT DETAILS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>8.00 AM to 9.30 AM</td>
+                  <td><b>Registration</b><br /><span style="font-size: smaller;">Venue: CS Hall</span></td>
+                </tr>
+                <tr>
+                  <td>9.30 AM to 10.00 AM</td>
+                  <td>Keynote—5 (Dr. Poki Chen, National Taiwan University of Science and Technology, Taiwan)<br /><span style="font-size: smaller;">Venue: Anna Auditorium</span></td>
+                </tr>
+                <tr>
+                  <td>10.00 AM to 10.30 AM</td>
+                  <td>Keynote—6 (TBD)<br /><span style="font-size: smaller;">Venue: Anna Auditorium</span></td>
+                </tr>
+                <tr>
+                  <td>10:30 AM to 11:00 AM</td>
+                  <td>Invited Talk — (Renesas)<br /><span style="font-size: smaller;">Venue: Anna Auditorium</span></td>
+                </tr>
+                <tr style="background-color: #E8EFCF;">
+                  <td >11.00 AM to 11.30 AM</td>
+                  <td>Networking Break <br/> <span style="font-size: smaller;">Venue: CS Hall</span></td>
+                </tr>
+                <tr>
+                  <td >11.30 AM to 1.00 PM</td>
+                  <td>Design Contest <br /> <span style="font-size: smaller;">Venue: Kamaraj Auditorium</span></td>
+                </tr>
+                <tr>
+                  <td >11.30 AM to 1.00 PM</td>
+                  <td><b>Technical Session 2</b></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>
+                    <table class="nested-table">
+                      <tr>
+                        <td><b><u>Session 2a</u></b></td>
+                        <td><b><u>Session 2b</u></b></td>
+                        <td><b><u>Session 2c</u></b></td>
+                        <td><b><u>Session 2d</u></b></td>
+                      </tr>
+                      <tr>
+                        <td><b>Emerging Devices and Material Technologies</b><br /> <span style="font-size: smaller;">Venue: TT 312</span></td>
+                        <td><b>Testing and Verification</b><br /> <span style="font-size: smaller;">Venue: TT 727</span></td>
+                        <td><b>Analog/Mixed Circuit Design</b><br /> <span style="font-size: smaller;">Venue: Ambedkar Auditorium</span></td>
+                        <td><b>VLSI System Design</b><br /> <span style="font-size: smaller;">Venue: TT Gallery 2</span></td>
+                      </tr>
+                      <tr>
+                        <td>Session Chair: TBD</td>
+                        <td>Session Chair: TBD</td>
+                        <td>Session Chair: TBD</td>
+                        <td>Session Chair: TBD</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: justify; font-size: smaller; vertical-align:top">Impact of SRH Lifetime on the performance of AlGaN-based UV-C LEDs
+                          <br /><br /><b>Balkrishna Choubey (IIT Jammu)</b>; Kankat Ghosh (IIT Jammu)</td>
+                        <td style="text-align: justify; font-size: smaller; vertical-align:top">Classification Algorithm for VLSI Test Cost Reduction
+                          <br /><br /><b>Farook Basha Shaik (MANIT Bhopal)</b>; Manish Dr Kashyap (MANIT Bhopal)</td>
+                        <td style="text-align: justify; font-size: smaller; vertical-align:top">Design and Analysis of Cross-Coupled Source Degenerated Balanced OTA for Biomedical Application
+                          <br /><br />Sourav Nath (NIT Silchar); Lokenath Kundu (NIT Silchar); <b>Koushik Guha (NIT Silchar)</b>; Krishna Lal Baishnab (NIT Silchar)</td>
+                        <td style="text-align: justify; font-size: smaller; vertical-align:top">Meminductor Emulator via Flux Approach for Wide Frequency Range Applications
+                          <br /><br /><b>Md Kashif Khan (IIIT Naya Raipur)</b>; Nidhee Bhuwal (IIIT Naya Raipur); Sagar (VIT, Vellore); Deepika Gupta (IIIT Naya Raipur)</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: justify; font-size: smaller; vertical-align:top">Demonstration of a Vertically Stacked Junctionless Forksheet as Dielectric Modulated Biosensor
+                          <br /><br /><b>Navneet Gandhi (IIITDM Jabalpur)</b>; Rajeewa Kumar Jaisawal (PDPM IIITDM Jabalpur); <b>Ankit Dixit (University of Glasgow)</b>; Naveen Kumar (University of Glasgow); P. N. Kondekar (IIITDM, Jabalpur); Vihar Georgiev (University of Glasgow); Navjeet Bagga (IIT Bhubaneshwar)</td>
+                        <td style="text-align: justify; font-size: smaller; vertical-align:top">Fault Resilient Micro-Coded Control Unit for Space-Based Digital Systems
+                          <br /><br />Deepanjali S (IIITDM Kancheepuram); <b>Noor Mahammad SK (IIITDM Kancheepuram)</b>; Raghavendra Kumar Sakali (Shri Siva Subramaniya Nadar College of Engineering)</td>
+                        <td style="text-align: justify; font-size: smaller; vertical-align:top">A Low-Power 10-bit SAR ADC with an Integrated CDAC and C-MOSCAP DAC for Implantable Pacemakers
+                          <br /><br /><b>Deepika Kumaradasan (NIT Rourkela)</b>; Sougata Kumar Kar (NIT Rourkela); Santanu Sarkar (NIT Rourkela)</td>
+                        <td style="text-align: justify; font-size: smaller; vertical-align:top">Machine Learning based computationally efficient approach for accurate prediction of Power Integrity performance of Power Distribution Networks.
+                          <br /><br /><b>Aprajita Bera (Bharatiya Vidya Bhavan's Sardar Patel Institute of Technology)</b>; Sudhakar S Mande (Don Bosco Institute of Technology)</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: justify; font-size: smaller; vertical-align:top">Capacitive Nonlinearity of GFET Compact Model in Quasi-Ballistic Regime for High-Frequency Applications
+                          <br /><br />Banoth Krishna (Assam University (A Central University)-Silchar); <b>Munindra Kumar (Delhi Technological University)</b>; Dava Nand (Delhi Technological University)</td>
+                        <td style="text-align: justify; font-size: smaller; vertical-align:top">Simulation based methodology for fault analysis of PCB designs
+                          <br /><br /><b>Jasleen Kaur Ahuja (Cadence Design Systems)</b>; Archita (Cadence Design Systems); Haripriya Raveendran (Cadence Design Systems)</td>
+                        <td style="text-align: justify; font-size: smaller; vertical-align:top">Analysis of Device Noise in Bandgap Reference Voltage Generators
+                          <br /><br />Snehalatha Lalithamma (IIT Roorkee); <b>Saravana Kumar (IIT Roorkee)</b>; Uddipan Agasti (IIT Kharagpur)</td>
+                        <td style="text-align: justify; font-size: smaller; vertical-align:top">Smart System with Descriptive Video Service and Spoken Dialogue System for Visually Impaired Individuals
+                          <br /><br /><b>R Sai Meghana (VTU)</b>; Meghana Kulkarni (VTU)</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: justify; font-size: smaller; vertical-align:top">Analytical investigation of the Drain Current and Surface Potential in NC- FETs considering the doping concentration and Interface Trap Charge Effect
+                          <br /><br /><b>Md. Sifatul Muktadir (DIAT Pune)</b>; Bhubon Chandra Chandra Mech (DIAT Pune); Rajesh K Singh (DIAT Pune)</td>
+                        <td style="text-align: justify; font-size: smaller; vertical-align:top">Selecting Rectification Targets for Patching Buggy Circuits
+                          <br /><br /><b>Ritaja Das (University of Utah)</b>; Priyank Kalla (University of Utah)</td>
+                        <td style="text-align: justify; font-size: smaller; vertical-align:top">
+                          A 0-24mA, 1.2V/1.8V Dual Mode Low Dropout Regulator Design for Efficient Power Management in Battery-Powered Systems
+                          <br /><br />Javed GS (INTEL); <b>Munazir Reza (Aligarh Muslim University)</b>; Naushad Alam (Aligarh Muslim University)</td>
+                        <td style="text-align: justify; font-size: smaller; vertical-align:top">Low Latency VLSI Architecture of Histogram Equalization of Images
+                          <br /><br /><b>Mohamed Asan Basiri M (IITDM Kurnool, AP)</b></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: justify; font-size: smaller; vertical-align:top">Pioneering accessibility -Development of a cost-effective optical imaging system
+                          <br /><br /><b>Priyanka P (SRMIST)</b>; Ashwin Kumar N (SRMIST); Dr S P Angeline, Dr S P Angeline Kirubha (SRMIST); Hema Brindha M (SRMIST)</td>
+                        <td style="text-align: justify; font-size: smaller; vertical-align:top">Design, Validation and Characterization of a Number Theoretic Transform IP Core
+                          <br /><br /><b>Anusha Koraboyina (NIELIT Calicut)</b>; Nandakumar R Nandanam (IEEE)</td>
+                        <td style="text-align: justify; font-size: smaller; vertical-align:top">
+                          Innovative Circuit Level Methodology for FinFET based Low-Power 6T SRAM Cell Design
+                            <br /><br />Vishal Gupta (VIT Vellore); Sribhuvaneshwari H (Sri Shakthi Institute of Engineering and Technology); <b>Tanmaya Kumar Das (VIT Vellore)</b>; Saurabh Khandelwal (Oxford Brookes University); Shyam Akashe (ITM University, Gwalior)</td>
+                        <td style="text-align: justify; font-size: smaller; vertical-align:top">Hybrid Overestimating Approximate Adder (HOAA): Improvising Processing Engine
+                          <br /><br /><b>Omkar Rajesh Kokane (IIT Indore)</b>; Prabhat Sati (IIT Indore); Mukul Lokhande (IIT Indore); Santosh Kumar Vishvakarma (IIT Indore)</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: justify; font-size: smaller; vertical-align:top"></td>
+                        <td style="text-align: justify; font-size: smaller; vertical-align:top">A Dynamic Window Size-Based VLSI Architecture Design of Moving Average Filter and Its Vulnerability to Hardware Trojans
+                          <br /><br /><b>Moitreya Chaudhury (IIEST Shibpur)</b>; Binit Kumar Pandit (IIEST Shibpur); Ayan Banerjee (IIEST Shibpur)</td>
+                        <td style="text-align: justify; font-size: smaller; vertical-align:top"></td>
+                        <td style="text-align: justify; font-size: smaller; vertical-align:top">Energy-Efficient Hardware Design for CNN-Based ECG Signal Classification in Wearable Bio-Medical Devices
+                          <br /><br />Akshayraj M R (NIT Tiruchirappalli); Muhammed Raees PC (NIT Tiruchirappalli); <b>Dr. Varun P. Gopi (NIT Tiruchirppalli)</b>; G Lakshmi Narayanan (NIT Tiruchirppalli); Gangadharan G R (NIT Tiruchirappalli); Dr. Jayaraj U Kidav (NIELIT Aurangabad)</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr style="background-color: #E8EFCF;">
+                  <td>1.00 PM to 2.00 PM</td>
+                  <td>Networking Lunch <br /> <span style="font-size: smaller;">Venue: Foodys</span></td>
+                </tr>
+                <tr>
+                  <td >2.00 PM to 2.30 PM</td>
+                  <td><b>Technical Session 3</b> <br /></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>
+                    <table class="nested-table">
+                        <tr>
+                          <td><b><u>Session 3a</u></b></td>
+                          <td><b><u>Session 3b</u></b></td>
+                          <td><b><u>Session 3c</u></b></td>
+                          <td><b><u>Session 3d</u></b></td>
+                          <td><b><u>Session 3e</u></b></td>
+                        </tr>
+                        <tr>
+                          <td><b>Emerging Devices and Material Technologies</b><br /> <span style="font-size: smaller;">Venue: TT 312</span></td>
+                          <td><b>Digital Circuit Implementation</b><br /> <span style="font-size: smaller;">Venue: TT 727</span></td>
+                          <td><b>Analog/Mixed Circuit Design</b><br /> <span style="font-size: smaller;">Venue: Ambedkar Auditorium</span></td>
+                          <td><b>FPGA Systems Design</b><br /> <span style="font-size: smaller;">Venue: Kamaraj Auditorium</span></td>
+                          <td><b>FPGA/Embedded Systems Design</b><br /> <span style="font-size: smaller;">Venue: TT Gallery 2</span></td>
+                        </tr>
+                        <tr>
+                          <td>Session Chair: TBD</td>
+                          <td>Session Chair: TBD</td>
+                          <td>Session Chair: TBD</td>
+                          <td>Session Chair: TBD</td>
+                          <td>Session Chair: TBD</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Comparative Study Of GAA-JL Transistor with And Without FE Material for Hydrogen Gas Sensing
+                            <br /><br />Preeti Verma (NIT Delhi); <b>Ashish Verma (NIT Delhi)</b>; Vaithiyanathan Dhandapani (NIT Delhi)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Design and Implementation of an FPGA-based Emulator Circuit for MLP using Memristors
+                            <br /><br />B Naresh Kumar Reddy (NIT Tiruchirappalli); <b>Srinivasulu Jogi (NIT Tiruchirappalli)</b>; K.Sarangam (NIT Warangal)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Optimizing Concurrent Co-Designing of ICs and Package using Multi Technology and RF Solution
+                            <br /><br /><b>Neha Agrawal (Cadence Design Systems)</b>; Amit Kumar (Cadence Design Systems); Hitesh Marwah (Cadence Design Systems)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Rapid Prototyping of CRYSTALS-Kyber Primitives on FPGA using Python-only HW-SW Flow
+                            <br /><br /><b>Dhruva S Hegde (IIT Bombay)</b>; Mandar Datar (IIT Bombay); Manish Prajapati (IIT Bombay); Sachin Patkar (IIT Bombay); Gaurav Trivedi (IIT Guwahati)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Enhancing Performance and Scalability: A Novel Hardware Architecture for 1024-bit Miller-Rabin Primality Testing
+                            <br /><br />Venkata Reddy Kolagatla (C-DAC Bangalore); Aneesh R (C-DAC Bangalore); <b>Vivian Desalphine (C-DAC Bangalore)</b></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Study of HeavyIon Irradiation Effects in FinFETs at Sub-5 nm Technology Node: Reliability Perspective
+                            <br /><br />Sresta Valasa (NIT Warangal); <b>Venkata Ramakrishna Kotha (NIT Warangal)</b>; Sunitha Bhukya (NIT Warangal); Bheemudu Vadthya (NIT Delhi); Shubham Tayal (Synopsys India Private Limited Hyderabad, India); V. Narendar (NIT Warangal)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Dynamic Resistance Reduction Methods for Clamp Lowering to Enhance GGNMOS ESD Protection
+                            <br /><br /><b>Tanay Das (IIT Gandhinagar)</b>; Madhav Pathak (IIT Gandhinagar); Sandip Lashkare (IIT Gandhinagar)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Energy Harvester Powered On-chip Reconfigurable Switched Capacitor Converter in 0.18 µm CMOS
+                            <br /><br /><b>Purvi Patel (DAIICT Gandhinagar)</b>; Biswajit Mishra (DAIICT Gandhinagar)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Design of FPGA based Custom IP Core to Detect the Edges of Brain Tumors
+                            <br /><br /><b>Soumita Chatterjee (University of Calcutta)</b>; Soumya Pandit (University of Calcutta); Arpita Das</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Quantized Neural Network Architecture for Hardware Efficient Real-Time 4K Image Super-Resolution
+                            <br /><br /><b>George Joseph (NIT Calicut)</b>; Jayakumar EP (NIT Calicut)</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">A TCAD Performance Analysis of an Inverter with 80% Non-Alignment in Gate in sub-45 nm Technology
+                            <br /><br /><b>Arun Kumar Sinha (VIT-AP University)</b>; SL Sangam (VIT-AP  University)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Design and ASIC Implementation of Area Efficient UART Core in SCL 180nm Technology
+                            <br /><br /><b>Arjun J M (CoE Trivandrum)</b>; Titto Anujan (CoE Trivandrum)
+                           </td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Three Stage Operational Amplifier with Split Length Differential Input Pair for IoT Applications
+                            <br /><br /><b>Saravanan P (PSG College of Technology)</b>; Harreni V (PSG College Of Technology); Krishnaveni V (PSG College of Technology)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">FPGA Implementation of Energy Efficient Approximate Hybrid Parallel Prefix Adders for Image Processing Applications
+                            <br /><br /><b>Sudhakar Reddy  Dantla (Vignan's Foundation for Science Technology and Research)</b>; Prudhvi Thumala (Vignan's Foundation for Science Technology and Research);  Hemanth Danaboina (Vignan's Foundation for Science Technology and Research); Jaswanth Kumar Ghantasala  (Vignan's Foundation for Science Technology and Research); Musala  Sarada (Vignan's Foundation for Science, Technology and Research); Pitchaiah Telagathoti (Vignan's Foundation for Science Technology and Research)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Secure key exchange protocol and storage of logic locking key
+                            <br /><br /><b>Manjith Baby Sarojam Chellam (IIIT Kottayam)</b>; Ramasubramanian Natarajan (NIT Tiruchirappalli); Nagi Naganathan (Northrop Grumman Corporation, Maryland, USA)</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">2D-Transitional Metal Dichalcogenide Materials for Bio-sensors Application: A DFT-based approach
+                            <br /><br />Ashish Maurya (Kanpur Institute of Technology, Kanpur); Shailendra Yadav (ABV-IIITM Gwalior Gwalior, M.P.); <b>Sagar (VIT, Vellore)</b>; Kaushal Kishor (Kanpur Institute of Technology, Kanpur); Gyanendra Kumar Verma (Kanpur Institute of Technology, Kanpur)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Power Efficient ASIC Design for Vision Transformer using Systolic Array Matrix Multiplier
+                            <br /><br /><b>Naveen R (NIT Calicut)</b>; Sudhish George (NIT Calicut)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">A 10-bit 0.9-GS/s Segmented Flash ADC
+                            <br /><br /><b>Chintan M K (PES University)</b>; Rashmi Seethir (PES University)
+                           </td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Surface Drift Debris Segmentation and Visualization through YCbCr Colour Space Thresholding using Low Power FPGA
+                            <br /><br /><b>Sarath Kumar K (VIT Vellore); Akash Iyer (VIT Vellore); Swastik Raj Behera (VIT Vellore)</b>; K Sivasankaran (VIT Vellore )</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Enhanced edge detection for image segmentation and its real-time implementation
+                            <br /><br /><b>Lourdu Jennifer J R (Anna University, MIT Campus, Chennai)</b>; Dr. Joy Vasantha Rani S P (Anna University, MIT Campus, Chennai)</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top"></td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Dynamic Precision Scaling in MAC Units for Energy-Efficient Computations in Deep Neural Network Accelerators
+                            <br /><br />Muhammed Raees PC (NIT, Tiruchirappalli); Akshayraj M R (NIT, Tiruchirappalli); Dr. Varun P. Gopi (NIT Tiruchirppalli); <b>G Lakshmi Narayanan (NIT, Tiruchirappalli )</b>; Gangadharan G R ( NIT, Tiruchirappalli ); Dr. Jayaraj U Kidav (NIELIT Auranagabad)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top"></td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Design of A Custom IP Core for Concatenated SVM Model to Classify Multi-class Handwritten Numerical Characters
+                            <br /><br /><b>Shraman Biswas (University of Calcutta)</b>; Soumya Pandit (University of Calcutta); Arpita Das (University of Calcutta)</td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">Signal Integrity Assessment of Stretchable Interconnects for Flexible Electronics System
+                            <br /><br /><b>Gulafsha S Bhatti (DAIICT Gandhinagar)</b>; Yash Agrawal (DAIICT Gandhinagar); Vinay S Palaparthy (DAIICT Gandhinagar)</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top"></td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top"></td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top"></td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top"></td>
+                          <td style="text-align: justify; font-size: smaller; vertical-align:top">An Adaptive Strategy for Dynamic Resource Allocation and Scheduling for Multitasking NoC based Multicore Systems
+                            <br /><br /><b>Suraj Paul (IEEE)</b></td>
+                        </tr>
+                      </table>
+                  </td>
+                </tr>
+                <tr style="background-color: #E8EFCF;">
+                  <td >3.30 PM to 4.00 PM</td>
+                  <td>Tea Break </td>
+                </tr>
+                <tr style="background-color: #1679AB; color: white;">
+                  <td >4:00 PM to 5:00 PM</td>
+                  <td>Panel Discussion<br /><span style="font-size: smaller;">The vibrance of India's Semiconductor Ecosystem: Building Quality Talent through Undergraduates Education</span></td>
+                </tr>
+                <tr>
+                  <td >5:00 PM to 5:30 PM</td>
+                  <td>Valedictory</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #111;">
+                  <td >5:30 PM to 7:00 PM</td>
+                  <td>Exploring Vellore</td>
+                </tr>
+              </tbody>
+          </table>
+    </section>
+    <!--Footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
